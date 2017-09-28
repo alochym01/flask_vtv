@@ -1,0 +1,7 @@
+.vscode
+__pycache__
+instance/settings.py
+config/app.db
+run.py
+flask_wsgi.sock
+/users
