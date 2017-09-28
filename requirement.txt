@@ -1,0 +1,10 @@
+Flask=0.12.2
+Flask-DebugToolbar=0.10.1
+
+
+# Application is gunicorn/ uWSGI
+gunicorn=19.7.1
+uWSGI=2.0.15
+Responsive Web page using bootstrap v3.3.7
+font-awesome 4.7
+jquery 1.12.4

@@ -1,0 +1,13 @@
+[Unit]
+Description=uWSGI instance to serve flask project
+After=network.target
+
+[Service]
+User=hadn
+Group=nginx
+WorkingDirectory=/home/hadn/flask
+Environment="PATH=/home/hadn/flask_venv/bin"
+ExecStart=/home/hadn/flask_venv/bin/uwsgi --ini wsgi.ini
+
+[Install]
+WantedBy=multi-user.target

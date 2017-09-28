@@ -1,0 +1,23 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+    <div class="container">
+      <form method="POST" action="/login">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        {{ form.hidden_tag() }}
+        <div class="form-group">
+          <label for="username">User Name</label>
+          <input type="email" class="form-control" name="username" placeholder="User Name">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" name="password" placeholder="Password">
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="remember"> Remember me
+          </label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div> <!-- /container -->
+{% endblock %}
